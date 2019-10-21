@@ -1,0 +1,202 @@
+.grid-m{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.creative,.how,.head,.how .content .card,
+.about,.projects,.footer,
+.footer .top .follow,.footer .links,
+.footer .links .content,
+.footer .address,
+.footer .address .content
+{
+	grid-template-rows: auto auto;
+}
+
+.creative .content,.projects .content{
+	grid-template-rows: auto auto auto auto;
+}
+
+.how .content,.about .content,
+.footer .top{
+	grid-template-rows: auto auto auto;
+}
+
+.footer .top .follow .content{
+	grid-template-columns: repeat(4,auto);
+	grid-template-rows: auto;
+	justify-content: center;
+}
+
+.creative .info{
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+    align-content: center;
+}
+
+.about .content .info{
+	grid-template-rows: repeat(6,auto);
+}
+
+/*styling*/
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 1.6;
+    font-family: europa,sans-serif;
+}
+
+.p-all {
+    padding: 4rem 2rem 1rem 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    .p-all {
+        padding: 5rem 10rem 1rem 10rem;
+    }
+}
+
+.img{
+	width: 100%;
+	height: auto;
+}
+
+.bg-img{
+	background-image: url("images/bg-76.svg");
+	background-size: cover;
+	background-position: center; 
+}
+
+.color-grey{
+	color: rgb(147, 147, 147);
+}
+
+.color-orange{
+	color: #f68632;
+}
+
+.font-36{
+	font-size: 36px;
+}
+
+.font-30{
+	font-size: 30px;
+}
+
+.font-20{
+	font-size: 20px;
+}
+
+.font-18{
+	font-size: 18px;
+}
+
+.font-16{
+	font-size: 16px;
+}
+
+.font-14{
+	font-size: 14px;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+
+.btn{
+	cursor: pointer;
+    background: #f68632;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.btn:hover{
+	background: #ed5f37;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.creative .info p:nth-child(2),
+.creative .info p:nth-child(3){
+	position: relative;
+}
+
+.creative .info p:nth-child(2)::before,
+.creative .info p:nth-child(3)::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background-color: #939393;
+}
+
+.creative,.how{
+	grid-row-gap: 4rem;
+}
+
+.creative .content,.how .content{
+	grid-row-gap: 2rem;
+}
+
+.how .content .card{
+	background: #fff;
+    padding: 3rem 2rem;
+    font-size: 18px;
+    text-align: left;
+    color: #808291;
+}
+
+.how .card .text p::before{
+	content: "\f00c";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #e5735c;
+	margin-right: 8px;
+
+}
+
+.about .content .info{
+	text-align: left;
+}
+
+
+
+/*tab view*/
+@media screen and (min-width: 500px){
+	.grid-t{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+	}
+
+
+/*desktop view*/
+@media screen and (min-width: 992px){
+	.grid-d{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	.about{
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+	}
+
+}

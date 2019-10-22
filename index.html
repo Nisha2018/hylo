@@ -13,6 +13,35 @@
 </head>
 
 <body>
+	<header>
+		<label for="toggle">&#9776</label>
+		<input type="checkbox" id="toggle">
+		<div class="logo">
+			<img src="images/logo.png" alt="logo">	
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Features</a></li>
+				<li>
+				  <div class="dropdown">
+					 <a href="#">Dropdown</a>
+					 <label for="drop">Dropdown</label>
+					 <input type="checkbox" id="drop">
+					 <div class="dropdown-content">
+					 	<ul>
+					 	  <li><a href="#">Menu Builder</a></li>
+						  <li><a href="#">Custom Link</a></li>
+						  <li><a href="#">Integrations</a></li>
+					 	</ul>
+					 </div>
+				  </div>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>	
+		</nav>
+	</header>
+	
+	<div class="bg-img1">
 	<section class="creative grid-m grid-t p-all">
 		<div class="content grid-m">
 			<div class="title font-36 font-bold">
@@ -26,7 +55,7 @@
 				<p><span class="color-orange"> Cash </span><span class="color-grey">Payment</span></p>
 				<p><span class="color-orange">Cheque </span><span class="color-grey">Collection</span></p>
 			</div>
-			<div>
+			<div class="btn-block">
 				<button class="btn">Collect Payment</button>
 			</div>
 		</div>
@@ -34,6 +63,7 @@
 			<img class="img" src="images/home.png" alt="pic">
 		</div>
 	</section>
+	</div>
 
 	<section class="bg-img">
 	<section class="how grid-m p-all">
@@ -41,30 +71,42 @@
 			<div class="title color-orange font-bold font-18">
 				<p>Invoice Payment Digitization</p>
 			</div>
-			<div class="sub-title font-bold font-30">
+			<div class="sub-title font-bold font-26">
 				<p>Get Paid Faster against your invoices</p>
 			</div>
 		</div>
 		<div class="content grid-m grid-d">
-			<div class="card">
-				<div class="icon"></div>
+			<div class="card grid-m">
+				<div class="icon">
+					<i class="fas fa-coins"></i>
+				</div>
 				<div class="text">
-					<p>Instant notification with payment link</p>
-					<p>Multiple digital payment option</p>
+					<ul>
+					<li>Instant notification with payment link</li>
+					<li>Multiple digital payment option</li>
+				    </ul>
 				</div>
 			</div>
-			<div class="card">
-				<div class="icon"></div>
+			<div class="card grid-m">
+				<div class="icon">
+					<i class="fas fa-chart-line"></i>
+				</div>
 				<div class="text">
-					<p>Real time tracking and reminders</p>
-					<p>Single view for all your payables/receivables.</p>
+					<ul>
+						<li>Real time tracking and reminders</li>
+						<li>Single view for all your payables/receivables.</li>
+				    </ul>
 				</div>
 			</div>
-			<div class="card">
-				<div class="icon"></div>
+			<div class="card grid-m">
+				<div class="icon">
+					<i class="fas fa-money-check-alt"></i>
+				</div>
 				<div class="text">
-					<p>Manual cash collection mode</p>
-					<p>Cheque collection mode</p>
+					<ul>
+					<li>Manual cash collection mode</li>
+					<li>Cheque collection mode</li>
+				   </ul>
 				</div>
 			</div>
 		</div>
@@ -72,159 +114,165 @@
 
 	<section class="about grid-m grid-d p-all">
 		<div class="image-container">
-			<img src="">
+			<img class="img" src="images/Group 1.png">
 		</div>
 		<div class="content grid-m">
 			<div class="head grid-m">
 				<div class="color-orange font-bold font-18">
 					<p>SME’s Business Assist-Hylo</p>
 				</div>
-				<div class="sub-title font-bold font-30">
+				<div class="sub-title font-bold font-26">
 					<p>Integrated Banking, Automated Invoices, Purchase Orders and Collections</p>
 				</div>
 			</div>
-			<div class="info font-18 grid-m">
-				<div>
-					<p>Instant b2b payments against invoices</p>
-				</div>
-				<div>
-					<p>Easy Purchase Order and invoice generation</p>
-				</div>
-				<div>
-					<p>Single Platform with Aggregated Account linkage</p>
-				</div>
-				<div>
-					<p>Automate your cash/cheque collections workflow</p>
-				</div>
-				<div>
-					<p>Easy integration via Open API to legacy systems</p>
-				</div>
-				<div>
-					<p>Instant notifications, Social Media Integration</p>
-				</div>
+			<div class="info font-18">
+				<ul>
+					<li>Instant b2b payments against invoices</li>
+				
+					<li>Easy Purchase Order and invoice generation</li>
+				
+					<li>Single Platform with Aggregated Account linkage</li>
+				
+					<li>Automate your cash/cheque collections workflow</li>
+				
+					<li>Easy integration via Open API to legacy systems</li>
+				
+					<li>Instant notifications, Social Media Integration</li>
+				</ul>
+				
 			</div>
-			<div>
+			<div class="button">
 				<button class="btn">Open Account</button>
 			</div>
 		</div>
 	</section>
 	</section>
 
-	<section class="how grid-m">
+	<section class="how grid-m p-all">
 		<div class="head">
-			<div class="title">
+			<div class="title color-orange font-bold font-18">
 				<p>Let your invoice speak of your business</p>
 			</div>
-			<div class="sub-title">
+			<div class="sub-title font-26 font-bold">
 				<p>Invoice creation, sending and tracking simplified</p>
 			</div>
 		</div>
 		<div class="content grid-m grid-d">
-			<div class="card">
+			<div class="card card-shadow">
 				<div class="icon"></div>
 				<div class="text">
-					<p>Create branded digital invoices</p>
-					<p>Engage and collaborate with team</p>
+					<ul>
+					<li>Create branded digital invoices</li>
+					<li>Engage and collaborate with team</li>
+				</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card card-shadow">
 				<div class="icon"></div>
 				<div class="text">
-					<p>Real-time monitoring of collection</p>
-					<p>Create smart recurring invoice</p>
+					<ul>
+					<li>Real-time monitoring of collection</li>
+					<li>Create smart recurring invoice</li>
+				</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card card-shadow">
 				<div class="icon"></div>
 				<div class="text">
-					<p>Pre-loaded buyers, tax information</p>
-					<p>Detailed dashboard coupled with data visuals</p>
+					<ul>
+					<li>Pre-loaded buyers, tax information</li>
+					<li>Detailed dashboard coupled with data visuals</li>
+				</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="about grid-m">
+	<section class="about grid-m p-all">
 		<div class="image-container">
-			<img src="">
+			<img class="img" src="images/Group 4.png">
 		</div>
 		<div class="content grid-m">
 			<div class="head grid-m">
-				<div>
+				<div class="title color-orange font-bold font-18">
 					<p>Better cashflows with Smart Purchase Orders [PO]</p>
 				</div>
-				<div>
+				<div class="sub-title font-26 font-bold">
 					<p>Streamline procurement with smart Purchase Orders to improve ROI</p>
 				</div>
 			</div>
-			<div class="content">
-				<div>
-					<p>Maintain a threshold-based inventory</p>
-				</div>
-				<div>
-					<p>Data driven thresholds helps in calibrating reorder point [ROP]</p>
-				</div>
-				<div>
-					<p>Access to 360-degree real view of inventory</p>
-				</div>
-				<div>
-					<p>Maker-checker roles to allow SME owner to approve Purchase Orders</p>
-				</div>
-				<div>
-					<p>Auto matching of Purchase Order against the invoice</p>
-				</div>
+			<div class="info font-18">
+				<ul>
+					<li>Maintain a threshold-based inventory</li>
+				
+					<li>Data driven thresholds helps in calibrating reorder point [ROP]</li>
+				
+					<li>Access to 360-degree real view of inventory</li>
+				
+					<li>Maker-checker roles to allow SME owner to approve Purchase Orders</li>
+				
+					<li>Auto matching of Purchase Order against the invoice</li>
+				</ul>
 			</div>
-			<div>
+			<div class="button">
 				<button class="btn">Create your first PO</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="projects grid-m">
-		<div class="heading">
-			<p>Your data and money is safe with us, we are</p>
+	<section class="projects grid-m p-all">
+		<div class="heading font-26 font-bold">
+			<p>Your data and money is safe with us, <span class="color-orange">we are</span></p>
 		</div>
-		<div class="content grid-m">
+		<div class="content grid-m grid-t grid-d">
+			
 			<div class="card">
-				<div class="image"></div>
-				<div class="text">
-					<div>
-						<p>Secured</p>
-					</div>
-					<div>
-						<p>Build upon secure application programming interfaces (APIs)</p>
-					</div>
+				<div class="image pic2">
 				</div>
-			</div>
-			<div class="card">
-				<div class="image"></div>
 				<div class="text">
-					<div>
+					<div  class="font-bold">
 						<p>Compliant</p>
 					</div>
-					<div>
+					<div class="light-grey font-14">
 						<p>Compliant with regulatory standards</p>
 					</div>
 				</div>
 			</div>
 			<div class="card">
-				<div class="image"></div>
+				<div class="image pic1">
+	
+				</div>
 				<div class="text">
-					<div>
+					<div  class="font-bold">
+						<p>Secured</p>
+					</div>
+					<div class="light-grey font-14">
+						<p>Build upon secure application programming interfaces (APIs)</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image pic3">
+					
+				</div>
+				<div class="text">
+					<div  class="font-bold">
 						<p>Proactive</p>
 					</div>
-					<div>
+					<div class="light-grey font-14">
 						<p>Proactive monitoring and real-time alert system</p>
 					</div>
 				</div>
 			</div>
 			<div class="card">
-				<div class="image"></div>
+				<div class="image pic4">
+				
+				</div>
 				<div class="text">
-					<div>
+					<div class="font-bold">
 						<p>Encryption</p>
 					</div>
-					<div>
+					<div class="light-grey">
 						<p>Encryption at multiple levels</p>
 					</div>
 				</div>
@@ -232,44 +280,54 @@
 		</div>
 	</section>
 
-	<footer class="footer grid-m">
+	<footer class="footer grid-m color-grey">
 		<div class="top grid-m grid-d">
-			<div class="follow">
+			<div class="follow grid-m">
 				<div class="title">
 					<p>Follow Us:</p>
 				</div>
-				<div class="content">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+				<div class="content grid-m">
+					<div><a href=""><i class="fab fa-facebook-f"></i></a></div>
+					<div><a href=""></a><i class="fab fa-instagram"></i></a></div>
+					<div><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+					<div><a href=""><i class="fab fa-twitter"></i></a></div>
 			    </div>
 			</div>
-			<div class="links">
+			<div class="links grid-m">
 				<div class="title">
 					<p>Links</p>
 				</div>
 				<div class="content">
 					<div>
-						<p>Privacy Policy</p>
+						<a href="">Privacy Policy</a>
 					</div>
 					<div>
-						<p>Terms and Conditions</p>
+						<a href="">Terms and Conditions</a>
 					</div>
 			    </div>
 			</div>
-			<div class="address">
+			<div class="address grid-m">
 				<div class="title">
 					<p>Address</p>
 				</div>
-				<div class="content">
-					<div>
+				<div class="content grid-m">
+					<div class="contact">
+						<div>
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div>
 						<p>687, Ferns Paradise, Doddanakundi
-Bangalore 560037, Karnataka, India
-</p>
+						Bangalore 560037, Karnataka, India
+						</p>
+					    </div>
 					</div>
-					<div>
+					<div class="contact">
+						<div>
+							<i class="fas fa-phone"></i>
+						</div>
+						<div>
 						<a href="">+91 98867 12230</a>
+					    </div>
 					</div>
 			    </div>
 			</div>

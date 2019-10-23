@@ -7,9 +7,10 @@
     <meta name="Description" content="Put your description here.">
     <title>Hylo</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,33 +22,36 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#">Features</a></li>
 				<li>
 				  <div class="dropdown">
-					 <a href="#">Dropdown</a>
-					 <label for="drop">Dropdown</label>
+					 <a href="#">Services</a>
+					 <label for="drop">Services</label>
 					 <input type="checkbox" id="drop">
 					 <div class="dropdown-content">
 					 	<ul>
-					 	  <li><a href="#">Menu Builder</a></li>
-						  <li><a href="#">Custom Link</a></li>
-						  <li><a href="#">Integrations</a></li>
+					 	  <li><a href="#">Payment against Invoice</a></li>
+						  <li><a href="#">SME’s Business Assist-Hylo</a></li>
+						  <li><a href="#">Create Invoice on the go</a></li>
+						  <li><a href="#">Purchase Order and Procurement</a></li>
 					 	</ul>
 					 </div>
 				  </div>
 				</li>
-				<li><a href="#">Contact</a></li>
+				<div class="buttons">
+					<li><a href="#">Login</a></li>
+					<li><a href="#" class="orange">Open an Account</a></li>
+			    </div>
 			</ul>	
 		</nav>
 	</header>
 	
 	<div class="bg-img1">
-	<section class="creative grid-m grid-t p-all">
+	<section class="creative grid-m grid-t grid-d p-all">
 		<div class="content grid-m">
 			<div class="title font-36 font-bold">
-				<p><span class="color-orange">Automated Payment</span><br> Against Invoice</p>
+				<p><span class="shadow color-orange">Automated Payment</span><br><span style="text-shadow: 2px 2px 3px ##d0c8c8;"> Against Invoice</span></p>
 			</div>
-			<div class="desc font-18 color-grey font-bold">
+			<div class="desc font-18 color-grey">
 				<p>Digitize payment against your Invoice in real time via </p>
 			</div>
 			<div class="info grid-m font-bold">
@@ -76,7 +80,7 @@
 			</div>
 		</div>
 		<div class="content grid-m grid-d">
-			<div class="card grid-m">
+			<div class="card grid-m" data-aos="fade-up">
 				<div class="icon">
 					<i class="fas fa-coins"></i>
 				</div>
@@ -87,7 +91,7 @@
 				    </ul>
 				</div>
 			</div>
-			<div class="card grid-m">
+			<div class="card grid-m" data-aos="fade-up" data-aos-duration="1000">
 				<div class="icon">
 					<i class="fas fa-chart-line"></i>
 				</div>
@@ -98,7 +102,7 @@
 				    </ul>
 				</div>
 			</div>
-			<div class="card grid-m">
+			<div class="card grid-m" data-aos="fade-up" data-aos-duration="2000">
 				<div class="icon">
 					<i class="fas fa-money-check-alt"></i>
 				</div>
@@ -114,7 +118,7 @@
 
 	<section class="about grid-m grid-d p-all">
 		<div class="image-container">
-			<img class="img" src="images/Group 1.png">
+			<img class="img" src="images/Group 1.png" data-aos="fade-up-right" data-aos-duration="1000">
 		</div>
 		<div class="content grid-m">
 			<div class="head grid-m">
@@ -157,8 +161,8 @@
 				<p>Invoice creation, sending and tracking simplified</p>
 			</div>
 		</div>
-		<div class="content grid-m grid-d">
-			<div class="card card-shadow">
+		<div class="content grid-m grid-t grid-d">
+			<div class="card card-shadow" data-aos="fade-up">
 				<div class="icon"></div>
 				<div class="text">
 					<ul>
@@ -167,7 +171,7 @@
 				</ul>
 				</div>
 			</div>
-			<div class="card card-shadow">
+			<div class="card card-shadow" data-aos="fade-up" data-aos-duration="1000">
 				<div class="icon"></div>
 				<div class="text">
 					<ul>
@@ -176,7 +180,7 @@
 				</ul>
 				</div>
 			</div>
-			<div class="card card-shadow">
+			<div class="card card-shadow" data-aos="fade-up" data-aos-duration="2000">
 				<div class="icon"></div>
 				<div class="text">
 					<ul>
@@ -190,7 +194,7 @@
 
 	<section class="about grid-m p-all">
 		<div class="image-container">
-			<img class="img" src="images/Group 4.png">
+			<img class="img" src="images/Group 4.png" data-aos="fade-up-right" data-aos-duration="1000">
 		</div>
 		<div class="content grid-m">
 			<div class="head grid-m">
@@ -272,8 +276,8 @@
 					<div class="font-bold">
 						<p>Encryption</p>
 					</div>
-					<div class="light-grey">
-						<p>Encryption at multiple levels</p>
+					<div class="light-grey font-14">
+						<p>Encryption at <br>multiple levels</p>
 					</div>
 				</div>
 			</div>
@@ -326,7 +330,7 @@
 							<i class="fas fa-phone"></i>
 						</div>
 						<div>
-						<a href="">+91 98867 12230</a>
+						<a href="tel:+91 98867 12230">+91 98867 12230</a>
 					    </div>
 					</div>
 			    </div>
@@ -338,7 +342,11 @@
 			</div>
 		</div>
 	</footer>
-
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>	
